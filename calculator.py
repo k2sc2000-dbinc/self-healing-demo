@@ -10,8 +10,7 @@ def subtract(a, b):
 
 
 def multiply(a, b):
-    # 일부러 버그: 곱하기인데 더하기로 바꿔서 test_multiply가 실패하게 만듦
-    return a + b
+    return a * b
 
 
 def divide(a, b):
