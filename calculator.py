@@ -6,8 +6,7 @@ def add(a, b):
 
 
 def subtract(a, b):
-    # 버그: 빼기인데 더하기로 잘못 구현되어 있음
-    return a + b
+    return a - b
 
 
 def multiply(a, b):
@@ -15,5 +14,6 @@ def multiply(a, b):
 
 
 def divide(a, b):
-    # 버그: 0으로 나누는 경우를 처리하지 않아 ZeroDivisionError 발생
+    if b == 0:
+        raise ValueError("0으로 나눌 수 없습니다.")
     return a / b
